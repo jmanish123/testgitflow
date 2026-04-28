@@ -1,30 +1,45 @@
-# Basic Todo Application
+# Todo Application
 
-A simple web-based todo application built with HTML, CSS, and JavaScript.
+A full-stack todo application with Node.js backend and vanilla JavaScript frontend.
 
 ## Features
 
 - Add new tasks
-- Mark tasks as completed
+- Mark tasks as completed/undo completion
 - Delete tasks
-- Responsive design
+- RESTful API backend
+- In-memory data storage
 
-## Usage
+## Project Structure
 
-1. Open `index.html` in your web browser.
-2. Enter a task in the input field and click "Add Task" or press Enter.
-3. Click "Complete" to mark a task as done (it will be crossed out).
-4. Click "Delete" to remove a task from the list.
+- `server.js`: Express server with API routes
+- `public/index.html`: Frontend application
+- `package.json`: Project dependencies and scripts
 
-## Files
+## Installation
 
-- `index.html`: The main application file containing HTML, CSS, and JavaScript.
+1. Ensure Node.js is installed on your system.
+2. Clone or download the project.
+3. Run `npm install` to install dependencies.
 
-## Requirements
+## Running the Application
 
-No special requirements. Just a modern web browser.
+1. Start the server: `npm start`
+2. Open your browser and navigate to `http://localhost:3000`
 
-## Troubleshooting
+## API Endpoints
 
-- If the page doesn't load, ensure you're opening `index.html` directly in a browser.
-- JavaScript must be enabled in your browser for the app to function.
+- `GET /api/todos`: Retrieve all todos
+- `POST /api/todos`: Create a new todo (body: `{ "text": "task description" }`)
+- `PUT /api/todos/:id`: Update a todo (body: `{ "completed": true/false }`)
+- `DELETE /api/todos/:id`: Delete a todo
+
+## Technologies Used
+
+- Backend: Node.js, Express.js
+- Frontend: HTML, CSS, JavaScript (vanilla)
+- Data Storage: In-memory (resets on server restart)
+
+## Development
+
+For development, you can modify the files and restart the server. The frontend is served statically from the `public` directory.
