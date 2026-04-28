@@ -1,0 +1,78 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "task_id": "T-001",
+      "module": "Infrastructure",
+      "feature": "Project Setup",
+      "task": "Initialize React Project Foundation",
+      "description": "Establish the core React project structure. This includes creating the package configuration, the HTML entry point, the main JavaScript entry point, and the root App component shell.",
+      "depends_on": [],
+      "acceptance_criteria": [
+        "package.json includes react and react-dom dependencies.",
+        "public/index.html contains the root div for mounting the React app.",
+        "src/index.js correctly renders the App component.",
+        "The application renders a placeholder header without errors."
+      ],
+      "verification_commands": [],
+      "affected_files": [
+        "package.json",
+        "public/index.html",
+        "src/index.js",
+        "src/App.js",
+        "src/App.css"
+      ],
+      "status": "completed",
+      "created_from": "spec_generation",
+      "ui_task_id": 16,
+      "files": [
+        "C:\\DARTS\\sandbox\\Manish\\todo_app\\src\\App.js"
+      ],
+      "created_at": "2026-04-28T10:25:37.585Z",
+      "updated_at": "2026-04-28T10:32:40.042Z",
+      "completed_at": "2026-04-28T10:32:40.042Z"
+    },
+    {
+      "id": 2,
+      "task_id": "T-002",
+      "module": "Calculator",
+      "feature": "Basic Arithmetic",
+      "task": "Implement Calculator UI and Logic",
+      "description": "Develop the core Calculator component including the numeric keypad (0-9, .), arithmetic operators (+, -, *, /), a display screen, and clear functionality. Implement the calculation logic using React state to handle input sequences and results. Update App.js to render the Calculator.",
+      "depends_on": [
+        "T-001"
+      ],
+      "acceptance_criteria": [
+        "Numeric buttons correctly update the display.",
+        "Arithmetic operators correctly chain operations.",
+        "The equals (=) button calculates the final result.",
+        "Clear (AC) button resets all state.",
+        "Layout is clean and uses a grid-based CSS structure for buttons."
+      ],
+      "verification_commands": [],
+      "affected_files": [
+        "src/components/Calculator.js",
+        "src/components/Calculator.css",
+        "src/App.js"
+      ],
+      "status": "completed",
+      "created_from": "spec_generation",
+      "ui_task_id": 16,
+      "files": [
+        "C:\\DARTS\\sandbox\\Manish\\todo_app\\src\\App.js"
+      ],
+      "created_at": "2026-04-28T10:25:37.585Z",
+      "updated_at": "2026-04-28T10:32:40.051Z",
+      "completed_at": "2026-04-28T10:32:40.051Z"
+    }
+  ],
+  "metadata": {
+    "source": "spec_generation",
+    "target_framework": "ReactJS",
+    "gap_summary": "",
+    "total_tasks": 2,
+    "created_at": "2026-04-28T10:25:37.585Z",
+    "last_updated": "2026-04-28T10:32:40.051Z"
+  },
+  "last_updated": "2026-04-28T10:32:40.051Z"
+}
